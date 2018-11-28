@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+
+    android:background="#c1a2a2"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/foodName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Food Name"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="4dp"/>
+
+            <TextView
+                android:id="@+id/foodDate"
+                android:layout_below="@+id/foodName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Data Text"
+                android:textSize="17sp"
+                android:textStyle="italic"
+                android:layout_marginTop="6dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="4dp"/>
+            <ImageView
+                android:id="@+id/thumbail"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_below="@+id/foodDate"
+                android:src="@drawable/fruit"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true" />
+            <TextView
+                android:id="@+id/calories"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="120"
+                android:textStyle="bold"
+                android:textSize="35sp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/thumbail"
+                android:textColor="#dc2b2b"/>
+            <TextView
+                android:id="@+id/calText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cal_text"
+                android:textStyle="bold"
+                android:layout_alignBaseline="@+id/calories"
+                android:layout_toRightOf="@+id/calories"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/thumbail" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=">"
+                android:layout_centerVertical="true"
+                android:textSize="35sp"
+                android:layout_alignParentRight="true"
+                />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>
